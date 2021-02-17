@@ -75,7 +75,7 @@
     }
 
     /**
-     *  This method takes a comma-separated data string and assigns the values to the Contact class properties
+     * 
      * @param {object} data 
      */
     fromJSON(data)

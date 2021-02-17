@@ -1,0 +1,33 @@
+{
+    "contacts":
+    [
+        {
+            "FullName:": "Tony Stark",
+            "ContactNumber":"34234324234",
+            "EmailAddress": "tony@gmail.com"
+        },
+
+        {
+            "FullName:": "Bruce Banner",
+            "ContactNumber":"34234324234",
+            "EmailAddress": "tony@gmail.com"
+        },
+
+        {
+            "FullName:": "Peter Parker",
+            "ContactNumber":"34234324234",
+            "EmailAddress": "tony@gmail.com"
+        },
+        {
+            "FullName:": "Stephen Strange",
+            "ContactNumber":"34234324234",
+            "EmailAddress": "tony@gmail.com"
+        },
+        {
+            "FullName:": "Read Richard",
+            "ContactNumber":"34234324234",
+            "EmailAddress": "tony@gmail.com"
+        }
+        
+    ]
+}

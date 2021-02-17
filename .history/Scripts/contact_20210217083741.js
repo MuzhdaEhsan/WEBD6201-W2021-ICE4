@@ -75,7 +75,7 @@
     }
 
     /**
-     *  This method takes a comma-separated data string and assigns the values to the Contact class properties
+     * this method converts json contact into a 
      * @param {object} data 
      */
     fromJSON(data)
@@ -86,7 +86,7 @@
     }
 
     /**
-     * This method converts the Contact into a comma-separated value string
+     *  This method takes a comma-separated data string and assigns the values to the Contact class properties
      *
      * @returns {string}
      */
