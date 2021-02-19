@@ -213,8 +213,8 @@
 
             contactIndex++;
           }
-          console.log(contactData);
-        }*/
+          console.log(contactData);*/
+        }
       });
 
       if (localStorage.length > 0) 

@@ -183,7 +183,6 @@
       // step 4
       XHR.addEventListener("readystatechange", function()
       {
-        /*
         //step 5 - insure that server is ready
         if(XHR.readyState === 4 && XHR.status === 200)
         {
@@ -214,7 +213,7 @@
             contactIndex++;
           }
           console.log(contactData);
-        }*/
+        }
       });
 
       if (localStorage.length > 0) 

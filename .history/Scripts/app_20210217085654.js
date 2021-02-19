@@ -183,7 +183,6 @@
       // step 4
       XHR.addEventListener("readystatechange", function()
       {
-        /*
         //step 5 - insure that server is ready
         if(XHR.readyState === 4 && XHR.status === 200)
         {
@@ -196,10 +195,10 @@
           //console.log(JSON.parse(XHR.responseText));
           for (const contact of contacts)
           {
-           
-            let contactData = localStorage.getItem(contactIndex);
+            //console.log(contact);
+            let contactData = localStorage.getItem(key);
 
-            let newContact = new core.Contact();
+            let contact = new core.Contact();
             newContact.fromJSON(contactData);
 
             contactData += `<tr>
@@ -213,8 +212,7 @@
 
             contactIndex++;
           }
-          console.log(contactData);
-        }*/
+        }
       });
 
       if (localStorage.length > 0) 

@@ -183,7 +183,6 @@
       // step 4
       XHR.addEventListener("readystatechange", function()
       {
-        /*
         //step 5 - insure that server is ready
         if(XHR.readyState === 4 && XHR.status === 200)
         {
@@ -196,25 +195,24 @@
           //console.log(JSON.parse(XHR.responseText));
           for (const contact of contacts)
           {
-           
-            let contactData = localStorage.getItem(contactIndex);
+            //console.log(contact);
+            let contactData = localStorage.getItem(key);
 
-            let newContact = new core.Contact();
-            newContact.fromJSON(contactData);
+            let contact = new core.Contact();
+            contact.fromJSON(contactData);
 
-            contactData += `<tr>
-            <th scope="row" class="text-center">${contactIndex}</th>
-            <td>${newContact.FullName}</td>
-            <td>${newContact.ContactNumber}</td>
-            <td>${newContact.EmailAddress}</td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</button></td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</button></td>
+            data += `<tr>
+            <th scope="row" class="text-center">${index}</th>
+            <td>${contact.FullName}</td>
+            <td>${contact.ContactNumber}</td>
+            <td>${contact.EmailAddress}</td>
+            <td class="text-center"><button value="${key}" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</button></td>
+            <td class="text-center"><button value="${key}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</button></td>
             </tr>`;
 
-            contactIndex++;
+            index++;
           }
-          console.log(contactData);
-        }*/
+        }
       });
 
       if (localStorage.length > 0) 

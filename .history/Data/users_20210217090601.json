@@ -1,0 +1,11 @@
+{
+    "users":
+    [
+        {
+            "DisplayName": "John Smith", 
+            "EmailAddress": "john.smith@exam.com",
+            "Username": "johnsmith",
+            "Password": "123456"
+        }
+    ]
+}

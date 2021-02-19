@@ -174,48 +174,21 @@
 
     function displayContactList() 
     {
-      // step 1
       let XHR = new XMLHttpRequest();
-      // step 2
+
       XHR.open("GET", "./Data/contacts.json");
-      // step 3
+
       XHR.send();
-      // step 4
+
       XHR.addEventListener("readystatechange", function()
       {
-        /*
-        //step 5 - insure that server is ready
+        // insure that server is ready
         if(XHR.readyState === 4 && XHR.status === 200)
         {
-          let contacts = JSON.parse(XHR.responseText).contacts;
-
-          let contactData = "";
-
-          let contactIndex = 1;
-          // step 6: do something with data
-          //console.log(JSON.parse(XHR.responseText));
-          for (const contact of contacts)
-          {
-           
-            let contactData = localStorage.getItem(contactIndex);
-
-            let newContact = new core.Contact();
-            newContact.fromJSON(contactData);
-
-            contactData += `<tr>
-            <th scope="row" class="text-center">${contactIndex}</th>
-            <td>${newContact.FullName}</td>
-            <td>${newContact.ContactNumber}</td>
-            <td>${newContact.EmailAddress}</td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</button></td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</button></td>
-            </tr>`;
-
-            contactIndex++;
-          }
-          console.log(contactData);
-        }*/
+          console.log(XHR.responseText);
+        }
       });
+
 
       if (localStorage.length > 0) 
       {
